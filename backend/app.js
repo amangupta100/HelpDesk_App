@@ -21,6 +21,9 @@ app.use("/api/ticket",ticketRoutes)
 app.use("/api/admin/ticket",require("./routes/admin/ticketRoutes"))
 app.use("/api/admin",require("./routes/admin/agentRoute"))
 app.use("/api/agent",require("./routes/agentRoute"))
+app.get("/",(req,res)=>{
+    res.send("API is running")
+})
 
 app.listen(process.env.PORT,()=>{
     console.log(`Server is running on port ${process.env.PORT}`)
