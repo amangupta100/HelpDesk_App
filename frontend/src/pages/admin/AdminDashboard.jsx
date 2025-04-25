@@ -5,7 +5,7 @@ import { SuccessToast } from "../../Toast/AllToast";
 
 export default function AdminDashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const isDashboardRoot = location.pathname === "/admin/dashboard";
+  const isDashboardRoot = location.pathname === "/admin/dashboard" || location.pathname === "/#/admin/dashboard/";
   const navigate = useNavigate()
 
   return (

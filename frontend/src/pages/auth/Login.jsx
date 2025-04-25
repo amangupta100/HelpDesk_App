@@ -89,6 +89,8 @@ export const Login = () => {
         </form>
         <h1 className="inline-block mt-4">Didn't have account?</h1>
         <NavLink to="/register" className="ml-2 text-blue-400">Sign Up</NavLink>
+        <p>Note-
+        Getting response is slow due to current database server is far away from my current location . Don't worry! under 20second you will get response , once the connection is connected to db server It's fast</p>
       </div>
     </div>
   );

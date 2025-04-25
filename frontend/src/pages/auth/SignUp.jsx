@@ -95,6 +95,8 @@ export const Register = () => {
         </form>
         <h1 className="inline-block mt-4">Already have account?</h1>
         <NavLink to="/login" className="ml-2 text-blue-400">Login Up</NavLink>
+        <p>Note-
+        Getting response is slow due to free db . Don't worry! under 20second you will get response , once the connection is connected to db server It's fast</p>
       </div>
     </div>
   );
