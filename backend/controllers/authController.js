@@ -18,7 +18,7 @@ const signUp =async (req,res) =>{
   bcrypt.genSalt(10,function(err,salt){
       bcrypt.hash(password,salt,async function(err,hash){
           user = await userModel.create({name:name,email:email,password:hash})
-          res.json({message:"User created successfully",success:true,token:CreateToken(user._id,user.role),user:{name:user.name,id:user._id}})
+          res.json({message:"User created successfully",success:true,user:{name:user.name,id:user._id,role: 'Customer'}})
       })
   })
   }

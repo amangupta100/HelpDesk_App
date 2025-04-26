@@ -24,10 +24,7 @@ export const Register = () => {
     if(success){
       SuccessToast(message)
       localStorage.setItem("user",JSON.stringify(res.user))
-      if(AdminCheck(formData)){
-            navigate("/admin/dashboard")
-          }
-          else navigate("/user/dashboard")
+      navigate("/user/dashboard")
     }
     else{
       ErrorToast(message)
